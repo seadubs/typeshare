@@ -148,7 +148,7 @@ impl Language for TypeScript {
             RustEnum::Algebraic { shared, .. } => {
                 write!(
                     w,
-                    "export type {}{} = ",
+                    "export type {}{} =",
                     shared.id.renamed, generic_parameters
                 )?;
 
